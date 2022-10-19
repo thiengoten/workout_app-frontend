@@ -5,6 +5,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Welcome from './pages/Welcome'
 import ProtectedRoute from './pages/ProtectedRoute'
+import NotFound from './pages/NotFound'
 
 function App() {
     return (
@@ -31,6 +32,10 @@ function App() {
                         <Route
                             path='/signup'
                             element={<Signup />}
+                        />
+                        <Route
+                            path='*'
+                            element={<NotFound />}
                         />
                     </Routes>
                 </div>
